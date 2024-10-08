@@ -120,16 +120,29 @@ body {
 }
 
 @media (max-width: 480px) {
-  .parentArea {
-    width: 100vw;
-    padding: 10px;
+  .chatArea {
+    width: 60vw;
+    height:20px;
+    margin-bottom: 20%;
+  }
+  .chatArea textArea{
+    font-size:smaller;
+    height :8px;
+
+  }
+  .chatArea button{
+    font-size:smaller;
+    height :30px;
+    
   }
 
-  .chatArea textarea {
-    height: 120px;
+  .chatArea textArea::-webkit-scrollbar {
+    display: none;
   }
+  
 
-  .box {
-    padding: 10px;
+  .heading h1 {
+    font-size: 2rem;
+    direction: ltr;
   }
 }
