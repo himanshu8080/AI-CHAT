@@ -29,7 +29,7 @@ function App() {
     <div className='parentArea'>
 
     <div className='heading'>
-      <h1>AI Chat -VANI</h1>
+      <h1>AI Chat -VANI Pagal</h1>
       </div>
 
       <div className='box'>
