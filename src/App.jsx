@@ -8,7 +8,7 @@ function App() {
   async function generateAnswer(){
     setAnswer("loading...");
     const response =await axios({
-      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAHmTDX95QmQ4gx_XUx8xB9d2OYE376nG0",
+      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAym5kxjQqgK04uBO5IVdEK-1JIj7uzvm0",
       method: "POST",
       data:{
         contents:[{
