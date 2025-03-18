@@ -7,8 +7,12 @@ function App() {
   
   async function generateAnswer(){
     setAnswer("loading...");
+
+   
+    
+
     const response =await axios({
-      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyAym5kxjQqgK04uBO5IVdEK-1JIj7uzvm0",
+      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBJsFQon7QDK7QRslWWBGPxhbuUJBcWB0k" ,
       method: "POST",
       data:{
         contents:[{
@@ -16,9 +20,12 @@ function App() {
         },],
       },
       });
+      
+      console.log(response.data);
       setAnswer(response['data']['candidates'][0]['content']['parts'][0]['text']);
       setQuestion(''); 
   }
+  
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
       generateAnswer();
@@ -51,4 +58,3 @@ function App() {
 }
 
 export default App;
-
